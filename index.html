@@ -1,290 +1,193 @@
-<!--This code was created by @WerDeveloper.
-Unauthorized copying, distribution, or modification of this code, in whole or in part, is strictly prohibited without prior written permission.
-Please do not remove or alter the credit to the original creator. If you wish to use this code for personal or commercial purposes, kindly contact the creator for permissions.
-Thank you for respecting the work and effort that went into creating this code. -->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr Chary</title>
-    <link rel="icon" type="image/png" href="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mr Chary - SAP CPI Integration Consultant portfolio. SAP BTP, SuccessFactors, OData, REST, SOAP, SFTP, Groovy, XSLT and AMS support." />
+  <title> Mr Chary | SAP CPI Integration Consultant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="background-animation"></div>
-    <div class="floating-elements" id="floatingElements"></div>
-    <nav id="mainNav">
-        <div class="container nav-container">
-            <a href="#" class="logo">WeRDevelopers</a>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#education">Education</a>
-                <a href="#journey">Journey</a>
-                <a href="#skills">Skills</a>
-            </div>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+  <div class="progress-bar" id="progressBar"></div>
 
-        <div class="mobile-nav" id="mobileNav">
-            <a href="#home" onclick="closeMobileMenu()">
-                <i class="fas fa-home"></i> Home
-            </a>
-            <a href="#education" onclick="closeMobileMenu()">
-                <i class="fas fa-graduation-cap"></i> Education
-            </a>
-            <a href="#journey" onclick="closeMobileMenu()">
-                <i class="fas fa-road"></i> Journey
-            </a>
-            <a href="#skills" onclick="closeMobileMenu()">
-                <i class="fas fa-code"></i> Skills
-            </a>
-        </div>
-
-        <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo" aria-label="Mr Chary"><span>Chary</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+      </div>
     </nav>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text fade-in">
-                    <h1>Hey! This is <span>Mr Chary</span></h1>
-                    <p>A web developer who loves creating websites and Telegram bots. I focus on clean design, smooth functionality, and smart automation to make things easier.</p>
-                    <a href="#journey" class="cta-button">Explore My Journey</a>
-                </div>
-                <div class="hero-visual fade-in">
-                    <div class="floating-card">
-                        <div class="card-content">
-                            <div class="profile-avatar">
-                                <img src="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png" alt="Profile Image">
-                            </div>
-                            <h3>Deep AKA "WeRDeveloper"</h3>
-                            <p>Full Stack Developer</p>
-                            <div class="location-chip">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Tripura, India</span>
-                            </div>
-                            <div
-                                style="margin-top: 20px; padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; width: 100%;">
-                                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Coding Since:</strong></p>
-                                <p style="font-size: 1.2rem; font-weight: 600; color: var(--accent);">2018</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Available for SAP CPI Integration Roles</div>
+          <h1>Developing reliable <span>SAP CPI integrations</span> from end to end.</h1>
+          <p class="hero-text">I design and support SAP CPI iFlows for SuccessFactors, SAP and non-SAP systems using OData, SOAP, REST, SFTP, Groovy, XSLT, mappings, monitoring, and exception handling.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects <span>↗</span></a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+          </div>
+          <div class="hero-contact"><span>📍 Hyderabad, India</span><a href="mailto:charytej@gmail">✉ Charytej@gmail.com</a><a href="tel:+916305759214">☎ +91 6305759214</a></div>
         </div>
 
-        <div class="scroll-down">
-            <a href="#education">
-                <i class="fas fa-chevron-down"></i>
-                <span>Scroll Down</span>
-            </a>
+        <div class="hero-card reveal delay-1">
+          <div class="terminal-top"><span></span><span></span><span></span><strong>cpi-integration</strong></div>
+          <div class="terminal-body">
+            <p><span class="code-key">const</span> consultant = {</p>
+            <p class="indent"><span class="code-prop">experience</span>: <span class="code-string">"5+ years"</span>,</p>
+            <p class="indent"><span class="code-prop">platform</span>: <span class="code-string">"SAP BTP / CPI "</span>,</p>
+            <p class="indent"><span class="code-prop">speciality</span>: <span class="code-string">"E2E Integrations"</span>,</p>
+            <p class="indent"><span class="code-prop">support</span>: <span class="code-string">"AMS / Production"</span>,</p>
+            <p class="indent"><span class="code-prop">focus</span>: [</p>
+            <p class="indent2"><span class="code-string">"SuccessFactors"</span>, <span class="code-string">"OData"</span>,</p>
+            <p class="indent2"><span class="code-string">"Groovy"</span>, <span class="code-string">"XSLT"</span>, <span class="code-string">"SFTP"</span></p>
+            <p class="indent">]</p>
+            <p>};</p>
+            <div class="terminal-result"><span>●</span> Ready to build &amp; support integrations</div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Education Status</h2>
-                <p>You can read this to know more about me.</p>
-            </div>
-            <div class="cards-grid">
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="card-title">Bachelor of Computer Applications (BCA)</h3>
-                    <p>I have completed my BCA from Techno College Of Engineering Agartala (TCEA) and am currently working as a Software Engineer in a private organization.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--accent); border-radius: 50%;"></div>
-                        <span>Status: <strong>Corporate employee</strong></span>
-                    </div>
-                </div>
-
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="card-title">Self-Taught Developer</h3>
-                    <p>Learning programming through online resources, hands-on projects, and consistent practice.
-                        Balancing academic studies with coding passion.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--primary); border-radius: 50%;"></div>
-                        <span>Learning Method: <strong>Online & Self-Study</strong></span>
-                    </div>
-                </div>
-
-                <div class="glass-card fade-in">
-                    <div class="card-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3 class="card-title">Future Goals</h3>
-                    <p>My future goal is to make my parents happy and provide them with a good and luxurious life. My biggest dream is to see them happy and fulfilled.</p>
-                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
-                        <div style="width: 10px; height: 10px; background: var(--secondary); border-radius: 50%;"></div>
-                        <span>Status: <strong>Work in progress</strong></span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <section class="stats section-small">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong>5+</strong><span>Years Experience</span></div>
+        <div class="stat reveal delay-1"><strong>E2E</strong><span>CPI Integrations</span></div>
+        <div class="stat reveal delay-2"><strong>AMS</strong><span>Support Tickets</span></div>
+        <div class="stat reveal delay-3"><strong>4</strong><span>Project Scenarios</span></div>
+      </div>
     </section>
 
-    <section id="journey" class="journey">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>My Coding Journey</h2>
-                <p>Started in 2019 and still going strong. Here's how my development journey has progressed.</p>
-            </div>
-
-            <div class="journey-timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2018</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">The Beginning</h3>
-                        <p>After completing my 12th board exams, I passed with 77.8% in the Science stream. Then I got admission to Techno College of Agartala. During that time, I also started learning HTML, CSS, JavaScript, etc. However, I was very confused at that phase of my life.</p>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2021</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Exploring Languages</h3>
-                        <p>Expanded my knowledge by learning Python, Java, and C++. Explored core programming concepts
-                            like data structures, algorithms, and object-oriented programming.</p>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2022</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Backend</h3>
-                        <p>Slowly, I started moving forward in full-stack development. There were many technologies and languages involved, such as PHP, React js, Django, Flask, and more...</p>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-year">2025</div>
-                    <div class="timeline-content">
-                        <h3 style="margin-bottom: 10px; color: white;">Current Focus</h3>
-                        <p>After graduation, I got a job at a private organization, and I feel this marked an important step in my journey. I received an offer from a private company on 7th September 2025. Now, I am working there and focusing on my future goals.</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <span class="section-label">01 / ABOUT</span>
+          <h2>SAP CPI Integration Consultant</h2>
         </div>
+        <div class="about-copy reveal delay-1">
+          <p>I'm <strong>Teja Chary Indrakanti </strong>, an SAP CPI Integration Consultant with 5+ years of SAP CPI / SAP BTP Integration experience. I have delivered end-to-end integrations and supported business-critical interfaces across SAP, SuccessFactors, and non-SAP systems.</p>
+          <p>My hands-on experience covers iFlow development, SuccessFactors Employee Central, API integrations, file-based integrations, transformation, security, monitoring, troubleshooting, and AMS production support.</p>
+          <div class="about-pills"><span>Integration Development</span><span>SuccessFactors EC</span><span>AMS Support</span><span>Production Monitoring</span></div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Programming Skills</h2>
-                <p>Languages and technologies I've learned since starting my journey in 2022</p>
-            </div>
-
-            <div class="skills-container">
-
-                <div class="skill-category fade-in">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Full-stack</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Broadening my skillset</p>
-                        </div>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">PHP</div>
-                        <div class="skill-item">React js</div>
-                        <div class="skill-item">Django</div>
-                        <div class="skill-item">Java</div>
-                        <div class="skill-item">Flask</div>
-                        <div class="skill-item">Git</div>
-                    </div>
-                    <p style="margin-top: 20px;">Now, as a full-stack developer, I can build websites from frontend to backend. I enjoy creating dynamic, user-friendly web applications and constantly improving my skills with new technologies.</p>
-                </div>
-
-                <div class="skill-category fade-in">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Python</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">My primary language</p>
-                        </div>
-                    </div>
-                    <p>Python is my favorite and most proficient language. I've used it for various projects including
-                        data analysis, automation, and web development.</p>
-                    <div
-                        style="margin-top: 20px; padding: 15px; background: rgba(48, 105, 152, 0.1); border-radius: 10px; border-left: 4px solid var(--python-blue);">
-                        <p style="font-size: 0.9rem; color: white;"><strong>Why Python?</strong> Its simplicity,
-                            readability, and vast ecosystem make it perfect for turning ideas into solutions quickly.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="skill-category fade-in">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div>
-                            <h3 style="color: white; margin-bottom: 5px;">Learning Path</h3>
-                            <p style="color: var(--gray); font-size: 0.9rem;">Continuous growth</p>
-                        </div>
-                    </div>
-                    <p>My journey has been focused on practical learning through projects. Each language has contributed
-                        to my growth as a developer.</p>
-                    <div
-                        style="margin-top: 20px; padding: 15px; background: rgba(99, 102, 241, 0.1); border-radius: 10px;">
-                        <p style="font-size: 0.9rem; color: white;"><strong>Next Steps:</strong> As I mention my future goals, I also want to share some ideas and my mistakes as a YouTuber.</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section dark-section" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-label">02 / SKILLS</span>
+          <h2>Core Technical Stack</h2>
+          <p>A focused integration skillset covering SAP CPI development, SuccessFactors APIs, transformation, security, monitoring, and support.</p>
         </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Integration</h3><div class="tags"><span>SAP CPI</span><span>SAP BTP</span><span>iFlow</span><span>OData</span><span>REST</span><span>SOAP</span><span>SFTP</span><span>JMS</span><span>ProcessDirect</span><span>SMTP</span></div></div>
+          <div class="skill-card reveal delay-1"><div class="skill-icon">⇄</div><h3>Transformation</h3><div class="tags"><span>Message Mapping</span><span>XSLT</span><span>Value Mapping</span><span>Groovy</span><span>XML</span><span>JSON</span><span>CSV</span></div></div>
+          <div class="skill-card reveal delay-2"><div class="skill-icon">◈</div><h3>SuccessFactors</h3><div class="tags"><span>Employee Central</span><span>CompoundEmployee API</span><span>OData API</span><span>Delta Load</span><span>Employee Master</span></div></div>
+          <div class="skill-card reveal delay-3"><div class="skill-icon">⌁</div><h3>Security &amp; Operations</h3><div class="tags"><span>OAuth 2.0</span><span>PGP Encryption</span><span>Cloud Connector</span><span>Exception Handling</span><span>Message Monitoring</span><span>AMS</span></div></div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h2 style="font-size: 1.8rem; margin-bottom: 10px; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; color: transparent;">
-                        <a href="https://www.youtube.com/@WeRdevelopers" style="text-decoration: none; color: inherit;">WeRDevelopers</a></h2>
-                    <p style="color: var(--gray);">A Full Stack Developer from Tripura</p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                    <a href="https://telegram.me/WeRdevelopers" class="social-link"><i class="fab fa-telegram"></i></a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy;
-                    <script>document.write(new Date().getFullYear())</script> <b>WeRDevelopers</b>, All rights reserved.
-                </p>
-            </div>
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-label">03 / EXPERTISE</span><h2>What I Can Deliver</h2><p>Practical SAP CPI capabilities built around real integration scenarios and production support needs.</p></div>
+        <div class="expertise-list">
+          <article class="expertise-item reveal"><span class="expertise-number">01</span><div><h3>End-to-End iFlow Development</h3><p>Designing, developing, deploying, and supporting integration flows with routing, transformation, validation, monitoring, and exception handling.</p></div><span class="arrow">↗</span></article>
+          <article class="expertise-item reveal"><span class="expertise-number">02</span><div><h3>SAP SuccessFactors Integrations</h3><p>Employee Central integrations using OData and CompoundEmployee APIs for full load, delta load, payroll, onboarding, and employee master data scenarios.</p></div><span class="arrow">↗</span></article>
+          <article class="expertise-item reveal"><span class="expertise-number">03</span><div><h3>Data Transformation</h3><p>Transforming complex hierarchical XML into target structures using Message Mapping, XSLT, XML-to-CSV, JSON-to-XML, and Groovy-based custom logic.</p></div><span class="arrow">↗</span></article>
+          <article class="expertise-item reveal"><span class="expertise-number">04</span><div><h3>Security &amp; Reliability</h3><p>Secure communication using OAuth 2.0, certificate-based authentication, PGP encryption, public key SFTP, and structured error handling.</p></div><span class="arrow">↗</span></article>
+          <article class="expertise-item reveal"><span class="expertise-number">05</span><div><h3>Monitoring &amp; AMS Support</h3><p>Troubleshooting failed messages, mapping issues, SFTP/API failures, timeout issues, missing data, and production support incidents using CPI monitoring tools.</p></div><span class="arrow">↗</span></article>
+          <article class="expertise-item reveal"><span class="expertise-number">06</span><div><h3>Cloud &amp; On-Prem Connectivity</h3><p>Experience with cloud integrations and exposure to Cloud Connector-enabled scenarios for secure connectivity between SAP BTP/CPI and on-premise SAP systems.</p></div><span class="arrow">↗</span></article>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <section class="section project-section" id="projects">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="section-label">04 / PROJECTS</span><h2>Featured Integration Work</h2><p>Selected SAP CPI project scenarios across file-based, API-based, SAP-to-SAP, and inbound integrations.</p></div>
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="project-top"><span class="project-type">SAP → NON-SAP</span><span class="project-num">01</span></div>
+            <h3>SuccessFactors EC to External SFTP Integration</h3>
+            <p>Developed an end-to-end SAP CPI integration to extract employee indicative data from SuccessFactors Employee Central and securely deliver encrypted CSV files to the Manulife SFTP server.</p>
+            <div class="tags"><span>CompoundEmployee API</span><span>XSLT</span><span>Groovy</span><span>XML → CSV</span><span>PGP</span><span>SFTP</span></div>
+            <ul><li>Used CompoundEmployee API and Looping Process Call for large employee data volumes and pagination processing.</li><li>Transformed hierarchical XML into target CSV structure using XSLT and implemented trailer record generation.</li><li>Validated mandatory employee fields using Groovy and converted payloads using XML to CSV converter.</li><li>Implemented PGP encryption, secure SFTP transfer, Exception Subprocess, and automated email alerts.</li></ul>
+          </article>
+          <article class="project-card reveal delay-1">
+            <div class="project-top"><span class="project-type">API-BASED</span><span class="project-num">02</span></div>
+            <h3>SuccessFactors EC to Active Directory Provisioning</h3>
+            <p>Automatically create or update employee accounts in an Active Directory provisioning system based on employee data changes.</p>
+            <div class="tags"><span>OData</span><span>REST</span><span>Groovy</span><span>Message Mapping</span><span>OAuth 2.0</span></div>
+            <ul><li>Fetched changed employee records using OData API and delta filters.</li><li>Validated email, employee ID, and department using Groovy.</li><li>Skipped invalid records and logged them separately to avoid complete interface failure.</li><li>Sent transformed records to target REST API using Request-Reply.</li></ul>
+          </article>
+          <article class="project-card reveal delay-2">
+            <div class="project-top"><span class="project-type">INBOUND</span><span class="project-num">03</span></div>
+            <h3>Third-Party HR System to SuccessFactors Upsert</h3>
+            <p>Validated, transformed, and upserted employee data from a third-party HR system into SuccessFactors Employee Central.</p>
+            <div class="tags"><span>REST Sender</span><span>JSON → XML</span><span>Message Mapping</span><span>OData Upsert</span><span>Exception Subprocess</span></div>
+            <ul><li>Accepted employee payload from external REST API in JSON format.</li><li>Converted JSON to XML and mapped fields into SuccessFactors OData upsert structure.</li><li>Implemented mandatory-field validation and detailed error notification logic.</li><li>Generated support-friendly logs for failed upsert records.</li></ul>
+          </article>
+          <article class="project-card reveal delay-3">
+            <div class="project-top"><span class="project-type">SAP → SAP</span><span class="project-num">04</span></div>
+            <h3>SuccessFactors EC to SAP S/4HANA Employee Replication</h3>
+            <p>Supported employee master and organizational data replication from SuccessFactors Employee Central to SAP S/4HANA.</p>
+            <div class="tags"><span>OData</span><span>CompoundEmployee</span><span>SOAP / IDoc</span><span>Cloud Connector</span><span>CPI Monitoring</span></div>
+            <ul><li>Transformed employee, department, manager, cost center, and job data into SAP target structures.</li><li>Handled delta synchronization using lastModifiedOn-based filtering.</li><li>Worked with Cloud Connector-enabled connectivity for on-premise S/4HANA access.</li><li>Monitored failures and coordinated with functional/Basis teams during issue resolution.</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="section dark-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-label">05 / EXPERIENCE</span><h2>Professional Experience</h2><p>A role-wise view of integration delivery, AMS support, monitoring, troubleshooting, and production support responsibilities.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">Aug 2024 — Present</div><div class="timeline-content"><div class="company-line"><h3>Wipro </h3><span>Software Engineer</span></div><h4>SAP CPI Integration Development &amp; AMS Support</h4><p class="client">Client: Bentley Systems</p><p>Working as an SAP CPI Integration Consultant, focusing on enterprise integration development, SuccessFactors connectivity, production monitoring, and AMS support for business-critical interfaces.</p><ul><li>Designed and enhanced SAP CPI iFlows using Request-Reply, Router, Splitter, Content Modifier, ProcessDirect, and Exception Subprocess.</li><li>Worked on SuccessFactors Employee Central integrations using OData and CompoundEmployee APIs for employee master data and delta processing.</li><li>Implemented XML, JSON, and CSV transformations using Message Mapping, XSLT, and Groovy scripting.</li><li>Configured and supported SFTP, REST, SOAP, and OData adapters with authentication, connectivity, and payload validation.</li><li>Handled AMS tickets by reviewing message monitoring, MPL logs, failed payloads, adapter errors, and runtime exceptions.</li><li>Performed production support, reprocessing, root-cause analysis, validation, and team coordination.</li></ul><div class="tags"><span>SAP CPI</span><span>BTP</span><span>SuccessFactors</span><span>OData</span><span>Groovy</span><span>XSLT</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">Apr 2024 — Jly 2024</div><div class="timeline-content"><div class="company-line"><h3>Mula Soft Technology</h3><span>Software Engineer</span></div><h4>CPI API Integration</h4><p class="client">Client: Enterprise Integration Applications</p><p>Worked on SAP CPI API-based integration development and support, focusing on REST/OData integrations, data transformation, message processing, error handling, and production support.</p><ul><li>Developed and enhanced SAP CPI iFlows for REST and OData API integrations between SAP and non-SAP systems.</li><li>Configured REST/OData sender and receiver adapters and implemented Request-Reply patterns for synchronous API communication.</li><li>Transformed XML and JSON payloads using Message Mapping, Content Modifier, Groovy, and standard CPI converters.</li><li>Implemented routing, validation, exception handling, and logging to improve integration reliability.</li><li>Configured authentication and connectivity for API integrations using OAuth 2.0 and basic authentication where required.</li><li>Monitored message processing and troubleshot API failures, authentication errors, payload issues, and connectivity problems.</li><li>Worked with functional and backend teams to validate API payloads, test interfaces, and resolve integration issues.</li></ul><div class="tags"><span>SAP CPI</span><span>SAP BTP</span><span>REST API</span><span>OData</span><span>Groovy</span><span>JSON</span><span>XML</span><span>OAuth 2.0</span><span>Exception Handling</span></div></article>
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">Feb 2023 — Apr 2024</div><div class="timeline-content"><div class="company-line"><h3>SRR Cloud Experts Guru Pvt Ltd</h3><span>Software Engineer</span></div><h4>SAP CPI Interface Support &amp; Enhancements</h4><p class="client">Client: SmithGroup</p><p>Supported SAP CPI interfaces through monitoring, troubleshooting, minor enhancements, transformation fixes, and support ticket resolution.</p><ul><li>Monitored CPI message processing and analyzed failed messages using logs and payload traces.</li><li>Worked on XML, JSON, and CSV transformation issues and validated target structures.</li><li>Handled AMS tickets involving mapping, adapter, missing-data, and connectivity issues.</li><li>Implemented routing changes, mapping corrections, content modifier updates, and exception handling improvements.</li><li>Prepared issue notes, test observations, and handoff updates for deployment and support closure.</li></ul><div class="tags"><span>SAP CPI</span><span>Groovy</span><span>XML</span><span>JSON</span><span>CSV</span><span>SFTP</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">Jan 2022 — Jan 2023</div><div class="timeline-content"><div class="company-line"><h3>Deloence Technology</h3><span>Software Engineer</span></div><h4>Integration Development &amp; Application Support</h4><p class="client">Client: Abiomed</p><p>Worked on integration flow development, testing, payload validation, and troubleshooting for file-based and API-based integration scenarios.</p><ul><li>Built and supported CPI integration flows involving API-based and file-based data exchange.</li><li>Validated input and target payloads and supported field-level conversion logic.</li><li>Supported testing by checking expected outputs, target data, and documented issues.</li><li>Assisted with mapping, authentication, connectivity, file-processing, and payload-formatting failures.</li></ul><div class="tags"><span>SAP CPI</span><span>XML</span><span>JSON</span><span>REST</span><span>SOAP</span><span>SFTP</span></div></div></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section value-section">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="section-label">06 / VALUE</span><h2>Why Recruiters Should Notice This Profile</h2></div>
+        <div class="value-grid">
+          <div class="value-card reveal"><span>01</span><h3>Developer Mindset</h3><p>Can build clean CPI solutions from requirement understanding to deployment support.</p></div>
+          <div class="value-card reveal delay-1"><span>02</span><h3>Data-Focused</h3><p>Comfortable handling employee data, effective-dated records, delta logic, and large payload scenarios.</p></div>
+          <div class="value-card reveal delay-2"><span>03</span><h3>Production-Aware</h3><p>Understands monitoring, error handling, alerts, reprocessing, security, and support ownership.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-box reveal">
+        <div><span class="section-label">07 / CONTACT</span><h2>Let’s build reliable integrations together.</h2><p>Open to SAP CPI Integration Consultant roles involving SAP BTP Integration Suite, SuccessFactors, APIs, SFTP, transformations, and production support.</p></div>
+        <div class="contact-actions"><a href="mailto:charytej@gmail.com?subject=SAP%20CPI%20Opportunity%20-%20Portfolio%20Inquiry" class= "btn btn-primary">Email Me ↗</a><a class="btn btn-secondary" href="tel:+916305759214">Call Me ↗</a></div>
+        <div class="contact-details"><a href="Charytej@gmail.com">Charytej@gmail.com</a><a href="tel:+91 6305759214">+91 6305759214</a><span>Hyderabad, India</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><span>© 2026 Teja Chary Indrakanti </span><span>Built for SAP CPI Integration opportunities.</span><a href="#home">Back to top ↑</a></div></footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-<!--This code was created by @WerDeveloper.
-Unauthorized copying, distribution, or modification of this code, in whole or in part, is strictly prohibited without prior written permission.
-Please do not remove or alter the credit to the original creator. If you wish to use this code for personal or commercial purposes, kindly contact the creator for permissions.
-Thank you for respecting the work and effort that went into creating this code. -->
